@@ -1594,3 +1594,64 @@ footer {
 #quality .button--primary:hover {
     background-color: #5011cc;
 }
+
+/* Steps section */
+#steps .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+#steps .step__number {
+    font-size: 36px;
+    font-weight: 600;
+    color: #cbd5e0;
+    flex-shrink: 0;
+}
+
+#steps .step h3 {
+    margin-bottom: 8px;
+}
+
+#steps .step p {
+    line-height: 1.6;
+}
+
+#steps .row {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+#steps .steps__content,
+#steps .steps__image {
+    flex: 1;
+    min-width: 0;
+}
+
+#steps .steps__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #steps .row {
+        flex-direction: column;
+    }
+}
+
+/* Make the Steps laptop picture smaller */
+#steps .steps__image {
+    flex: 0 1 400px;
+    min-width: 0;
+}
+
+#steps .steps__image img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+}
