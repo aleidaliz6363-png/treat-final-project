@@ -1655,3 +1655,48 @@ footer {
     height: auto;
     margin: 0 auto;
 }
+
+/* Steps section: laptop left, instructions right */
+#steps .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* Move laptop to the left */
+#steps .steps__image {
+    order: 1;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Move steps text to the right */
+#steps .steps__content {
+    order: 2;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Keep laptop at a good size */
+#steps .steps__image img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    #steps .row {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    #steps .steps__image,
+    #steps .steps__content {
+        width: 100%;
+    }
+}
