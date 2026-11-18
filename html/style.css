@@ -1700,3 +1700,82 @@ footer {
         width: 100%;
     }
 }
+
+/* VALUES SECTION */
+
+#values .values__list {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+#values .value-item {
+    flex: 1;
+}
+
+#values .value-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#values .value-item p {
+    color: #718096;
+    line-height: 1.8;
+}
+
+#values .button--primary {
+    display: inline-block;
+    background-color: #6415ff;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+#values .button--primary:hover {
+    background-color: #5011cc;
+}
+
+@media (max-width: 768px) {
+    #values .values__list {
+        flex-direction: column;
+    }
+}
+
+
+/* Values icons */
+
+#values .value-item h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.value-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 20px;
+}
+
+.affordable-icon {
+    background-color: #c6f6d5;
+    color: #276749;
+}
+
+.professional-icon {
+    background-color: #fed7d7;
+    color: #9b2c2c;
+}
+
+.professional-icon i {
+    color: #9b2c2c;
+}
+
