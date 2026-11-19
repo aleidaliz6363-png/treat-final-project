@@ -2277,3 +2277,20 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+/* Mobile Sign Up Button */
+
+.modal__link.modal__link--primary {
+    background-color: #6415ff;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modal__link.modal__link--primary:hover {
+    background-color: #5011cc;
+    color: white;
+}
