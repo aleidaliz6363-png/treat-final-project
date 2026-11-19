@@ -2267,3 +2267,13 @@ footer {
         font-weight: 600;
     }
 }
+/* Center Features Section Heading */
+
+#features .section__tag,
+#features .section__title,
+#features .section__para {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
