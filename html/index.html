@@ -27,21 +27,19 @@
                 <a href="#blog" class="menu-link">Blog</a>    
                 <a href="#pricing" class="menu-link">Pricing</a>    
                 <a href="#contact" class="menu-link">Contact Us </a>    
-                <a href="#login" class="menu-link login">Loging</a>    
-                <a href="#signup" class="menu-link menu-link--primary">Sing Up</a>    
+                <a href="#login" class="menu-link login">Login</a>    
+                <a href="#signup" class="menu-link menu-link--primary">Sign Up</a>    
                 </div>
-                <button class="btn__menu" onclick="openMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="btn__menu--svg">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
+    <button class="btn__menu"
+    aria-controls="mobile-menu"
+    aria-expanded="false"
+    aria-label="Open menu"
+    onclick="openMenu()">
+    <i class="fas fa-bars"></i>
+</button>
             </div>
         </nav>
-        <div class="modal">
+        <div class="modal" id ="mobile-menu">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -51,18 +49,17 @@
                 </svg>
             </button>
             <div class="modal__links">
-                <a class="modal__link">About</a>
-                <a class="modal__link">Blog</a>
-                <a class="modal__link">Pricing</a>
-                <a class="modal__link">Contact Us</a>
-                <a class="modal__link">Login</a>
-                <a class="modal__link modal__link--primary">Sign Up</a>
-                <a class="modal__link" href="features" onclick="closeMenu()">About</a>
-                <a class="modal__link modal__link--primary" href="steps" onclick="closeMenu()">How it works</a>
-                <a class="modal__link" href="pricing" onclick="closeMenu()">Pricing</a>
-                <a class="modal__link" href="contact" onclick="closeMenu()">Contact Us</a>
-                <a class="modal__link" href="login" onclick="closeMenu()">Login</a>
-                <a class="modal__link modal__link--primary" href="signup" onclick="closeMenu()">Sign Up</a> 
+                 <a class="modal__link" href="#features" onclick="closeMenu()">About</a>
+
+<a class="modal__link" href="#steps" onclick="closeMenu()">How it works</a>
+
+<a class="modal__link" href="#pricing" onclick="closeMenu()">Pricing</a>
+
+<a class="modal__link" href="#contact" onclick="closeMenu()">Contact Us</a>
+
+<a class="modal__link" href="#login" onclick="closeMenu()">Login</a>
+
+<a class="modal__link modal__link--primary" href="#signup" onclick="closeMenu()">Sign Up</a>
             </div>
         </div>
         <header>
@@ -92,122 +89,149 @@
         </header>
     </section>
     <main>
-        <section id="features">
-            <div class="container">
-                <div class="row__narrow">
-                    <h4 class="section__tag">Features</h4>
-                    <h2 class="section__title">
-                        We Have Amazing <span class="purple">Service.</span>
-                    </h2>
-                    <div class="section__para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                </div>
+      <section id="features">
+    <div class="container">
+        <div class="row row__narrow">
+
+            <div class="features__heading">
+                <h4 class="section__tag">FEATURES</h4>
+
+                <h2 class="section__title">
+                    We Have Amazing
+                    <span class="purple">Service.</span>
+                </h2>
+
+                <p class="section__para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
             <div class="features">
-                    <div class="feature">
-                        <div class="feature__row">
-                            <figure class="feature__img--wraper">
-                                <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
-                                class="feature__img" 
-                                alt="Purple shield with a lightning bolt, symbolizing secure payments."
-                                />
-                            </figure>
-                             <div class="feature__text">
-                                 <h2 class="feature__title">Secure</h2>
-                                 <p class="feature__para">
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 </p>
-                             </div>
-                             <div class="feature__row">
-                            <figure class="feature__img--wraper">
-                                <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+
+                <!-- Secure -->
+                <div class="feature">
+                    <div class="feature__row">
+                        <figure class="feature__img--wrapper">
+                            <img
                                 class="feature__img"
-                                alt="Purple support icon, symbolizing 24/7 customer support."
-                                />
-                            </figure>   
-                             <div class="feature__text">
-                                 <h2 class="feature__title">24/7 Support</h2>
-                                 <p class="feature__para">
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 </p>
-                             </div>
-                            <div class="feature__row">
-                            <figure class="feature__img--wraper">
-                                <img src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
-                                class="feature__img" 
-                                alt="Purple customize icon, symbolizing customizable services."
-                                />
-                            </figure>
-                             <div class="feature__text">
-                                 <h3 class="feature__title">Customize</h3>
-                                 <p class="feature__para">
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 </p>
-                             </div> 
-                             <div class="feature__row">
-                            <figure class="feature__img--wraper">
-                                <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
-                                class="feature__img" 
-                                alt="Purple reliable icon, symbolizing reliability."
-                                />
-                            </figure>
-                             <div class="feature__text">
-                                 <h3 class="feature__title">Reliable</h3>
-                                 <p class="feature__para">
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 </p>
-                             </div>
-                        </div>
-                        <div class="feature__row">
-                            <figure class="feature__img--wraper">
-                                <img src="./assets/fast-icon.dbb97107f60f25f0182c41b249d53865.svg"
-                                class="feature__img"                                 />
-                            </figure>
-                             <div class="feature__text">
-                                 <h3 class="feature__title">Fast</h3>
-                                 <p class="feature__para">
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 </p>
-                             </div>
-                             <div class="feature__row">
-                            <figure class="feature__img--wraper">
-                                <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
-                                class="feature__img"
-                                />
-                            </figure>
-                             <div class="feature__text">
-                                 <h2 class="feature__title">Easy</h2>
-                                 <p class="feature__para">
-                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 </p>
-                                 <div class="feature__row">
-                            <figure class="feature__img--wraper">
-                                <img src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
-                                class="feature__img">
-                            </figure>
+                                src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                                alt="Security"
+                            />
+                        </figure>
+
+                        <div class="feature__text">
+                            <h3 class="feature__title">Secure</h3>
+                            <p class="feature__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="features">
-                <div class="feature__row">
-            </div>
-             <div class="features">
-                <div class="feature__row">  
+
+                <!-- Support -->
+                <div class="feature">
+                    <div class="feature__row">
+                        <figure class="feature__img--wrapper">
+                            <img
+                                class="feature__img"
+                                src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                                alt="Support"
+                            />
+                        </figure>
+
+                        <div class="feature__text">
+                            <h3 class="feature__title">24/7 Support</h3>
+                            <p class="feature__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-             </div>
-             <div class="features">
-                <div class="feature__row">
-             </div>
-             <div class="features">
-                <div class="feature__row">
-             </div>   
-             <div class="features">
-                <div class="feature__row">
-             </div>
+
+                <!-- Customizable -->
+                <div class="feature">
+                    <div class="feature__row">
+                        <figure class="feature__img--wrapper">
+                            <img
+                                class="feature__img"
+                                src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                                alt="Customize"
+                            />
+                        </figure>
+
+                        <div class="feature__text">
+                            <h3 class="feature__title">Customizable</h3>
+                            <p class="feature__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reliable -->
+                <div class="feature">
+                    <div class="feature__row">
+                        <figure class="feature__img--wrapper">
+                            <img
+                                class="feature__img"
+                                src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                                alt="Reliable"
+                            />
+                        </figure>
+
+                        <div class="feature__text">
+                            <h3 class="feature__title">Reliable</h3>
+                            <p class="feature__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast -->
+                <div class="feature">
+                    <div class="feature__row">
+                        <figure class="feature__img--wrapper">
+                            <img
+                                class="feature__img"
+                               src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+                                alt="Fast"
+                            />
+                        </figure>
+
+                        <div class="feature__text">
+                            <h3 class="feature__title">Fast</h3>
+                            <p class="feature__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Easy -->
+                <div class="feature">
+                    <div class="feature__row">
+                        <figure class="feature__img--wrapper">
+                            <img
+                                class="feature__img"
+                                src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+                                alt="Easy"
+                            />
+                        </figure>
+
+                        <div class="feature__text">
+                            <h3 class="feature__title">Easy</h3>
+                            <p class="feature__para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-        </section>
+        </div>
+    </div>
+</section>
         <section id="quality">
             <div class="container">
                 <div class="row">
