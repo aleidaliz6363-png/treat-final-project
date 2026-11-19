@@ -2294,3 +2294,20 @@ footer {
     background-color: #5011cc;
     color: white;
 }
+/* Desktop Sign Up Button */
+
+.menu-link.menu-link--primary {
+    background-color: #6415ff;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 300ms ease;
+}
+
+.menu-link.menu-link--primary:hover {
+    background-color: #5011cc;
+    color: white;
+}
